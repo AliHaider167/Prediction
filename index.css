@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+  border-radius: 6px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+.background {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  margin-left: 250px;
+  transition: 0.5s;
+}
+
+.background:hover{
+  filter: drop-shadow(0px 0px 6px #ff5c5c);
+}
+
+.input-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
+/* Positioning the input boxes */
+#input1 {
+  margin-top: -410px;
+  margin-left: 180px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#input2 {
+  margin-top: -475px;
+  margin-left: 440px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#input3 {
+  margin-top: -130px;
+  margin-left: 440px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#input4 {
+  margin-top: -160px;
+  margin-left: 670px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.output-box {
+  position: absolute;
+  bottom: 15px;
+  left: 700px;
+  transform: translateX(-50%);
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
+input{
+  padding-left: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 3px;
+  border-width: 0.666667px;
+  border-style: solid;
+  font-size: 12px;
+}
+
+.animated-button {
+  position: absolute;
+  bottom: 0px;
+  left: 400px;
+  margin-bottom: 10px;
+  transform: translateX(-50%);
+  padding: 15px 30px;
+  background-color: #ff5c5c;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.animated-button:hover {
+  transform: scale(1.1);
+  background-color: #ff3030;
+}
+
+.animated-button:active {
+  transform: scale(0.9);
+  background-color: #e60000;
+}
+.animated-button {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+      background-color: #ff5050;
+  }
+  100% {
+      transform: scale(1);
+      background-color: #ff5c5c;
+  }
+}
